@@ -23,11 +23,21 @@ a {
 	font-size: 2em;
 }
 
-img {
-	max-width: 80%
-}
 #background {
-	max-width: 100%
+	max-width: 100%;
+}
+
+.ct {
+	width: 500px;
+}
+
+.ds {
+	width: 300px;
+}
+
+
+.size {
+ width: 1000px;
 }
 
 p {
