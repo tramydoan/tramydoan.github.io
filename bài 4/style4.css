@@ -2,36 +2,37 @@
 	box-sizing: border-box;
 }
 
-.clean::after {
-	content: "";
-	clear: both;
-	display: table;
+body {
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.wrap {
+	max-width: 1000px;
+	margin: auto;
 }
 
 p {
 	font-size: 2em;
 	text-align: center;
 	color: green;
-	font-family: Arial;
 }
 
-.hover {
-	float: left;
-	width: 33.33%;
-  	padding: 5px;
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: all;
+	justify-content: center;
 }
 
-#banner {
-	max-width: 100%
-} 
+.album:hover {
+	transform: translateY(-5px);
+}
 
-.can {
+.album {
+	margin: auto;
+	width: 33,333333%;
 	padding: 5px;
-	font-family: Arial;
-}
-
-a:link {
-	color: red;
 }
 
 a:visited {
@@ -49,4 +50,33 @@ a:active {
 a {
 	font-size: 2em;
 	text-decoration: none;
+}
+
+#main-menu {
+	position: relative;
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #dddddd;
+}
+
+#main-menu a {
+	padding: 15px;
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+
+#main-menu > a:first-child {
+	position: absolute;
+	padding: 4px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: -123px;
+	left: 75px;
+}
+
+#main-menu > a:first-child > img {
+	max-width: 160px;
+	border-radius: 50%;
 }
