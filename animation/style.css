@@ -9,6 +9,10 @@ html, body {
 	font-weight: bold;
 }
 
+img {
+	max-width: 100%;
+}
+
 @keyframes title {
 	0%  {background-color: #EF7126; color: #F9E559;}
 	25%  {background-color: #6F3662; color: #FFFFFF;}
