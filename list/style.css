@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #3c3c3a;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Avenir Next', 'Avenir', sans-serif;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+
+h1 {
+	color: #292b2c;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+}
+
+img {
+	display: block;
+	margin: auto;
+	vertical-align: middle;
+}
+
+.item-info a:hover , a:active {
+	color: #7c0040;
+	text-decoration: underline;
+}
+
+.item-info a {
+	color: #3c3c3a;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.top-menu {
+	background: #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+.top-menu ul {
+	list-style-type: none;
+}
+
+.top-menu ul li {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+
+.top-menu a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
+
+.top-menu a:hover {
+	background: #f1f1f1;
+	color: #333;
+}
+
+.top-menu ul li:hover .sub-menu {
+	display: block;
+} 
+
+.top-menu ul li .sub-menu {
+	display: none;
+	position: absolute;
+	text-align: center;
+	left: -35px;
+}
+
+.content-home, .content-menu, .content-blog, .content-drinks, .content-foods {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: all;
+	justify-content: center;
+}
+
+.item-image img {
+	max-width: 100%;
+	margin: auto;
+}
+
+.item-drinks, .item-home, .item-foods {
+	margin: auto;
+	width: 25%;
+	padding: 30px 0 50px 7px;
+	max-height: 420px;
+	position: relative;
+}
+
+.item-home .best-seller{
+	position: absolute;
+	right: 6px;
+	top: 30px;
+	background: #ea8025;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.item-home .sale {
+	position: absolute;
+	right: 6px;
+	top: 30px;
+	background: #ea8025;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+span {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.item-menu, .item-blog {
+	float: left;
+	width: 33.3333333%;
+	padding: 20px 0 50px 7px;
+	max-height: 450px;
+	position: relative;
+}
+
+.item-info h3 > a {
+	position: absolute;
+	left: 20px; 
+	display: inline-block;
+}
+
+.item-info h5 > a {
+	position: absolute;
+	left: 20px; 
+	display: inline-block;
+}
+
+.content-sp {
+	position: relative;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.sp-image {
+	float: left;
+	padding-top: 100px;
+	padding-right: 20px;
+}
+
+.sp-info {
+	padding-top: 100px;
+	position: absolute;
+	left: 530px;
+}
+
+#about {
+	max-width: 1000px;
+	margin: auto;
+}
+
+
+.backtotop {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
+
+#footer {
+	text-align: center;
+}
