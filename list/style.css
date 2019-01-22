@@ -1,14 +1,14 @@
 * {
 	box-sizing: border-box;
+	padding: 0;
 }
 
 body {
 	color: #3c3c3a;
 	font-size: 18px;
 	font-weight: 400;
-	font-family: 'Avenir Next', 'Avenir', sans-serif;
+	font-family: Roboto, sans-serif;
 	line-height: 1.5;
-	vertical-align: middle;
 }
 
 h1 {
@@ -23,7 +23,6 @@ h1 {
 img {
 	display: block;
 	margin: auto;
-	vertical-align: middle;
 }
 
 .item-info a:hover , a:active {
@@ -42,23 +41,21 @@ img {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 60px;
 	width: 100%;
 	text-align: center;
 	z-index: 10;
 }
 
-.top-menu ul {
+.top-menu > ul {
 	list-style-type: none;
+	text-align: center;
 }
 
 .top-menu ul li {
 	position: relative;
 	display: inline-block;
 	width: 120px;
-	height: 40px;
 	line-height: 40px;
-	margin-left: -5px;
 }
 
 .top-menu a {
@@ -74,13 +71,13 @@ img {
 
 .top-menu ul li:hover .sub-menu {
 	display: block;
+	background: #000000;
 } 
 
 .top-menu ul li .sub-menu {
 	display: none;
 	position: absolute;
 	text-align: center;
-	left: -35px;
 }
 
 .content-home, .content-menu, .content-blog, .content-drinks, .content-foods {
@@ -168,7 +165,6 @@ span {
 	max-width: 1000px;
 	margin: auto;
 }
-
 
 .backtotop {
 	position: fixed;
