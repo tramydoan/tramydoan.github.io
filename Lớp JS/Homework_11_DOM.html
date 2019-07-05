@@ -43,7 +43,7 @@ Bài 2: function changeBgColor(color): Thay đổi màu nền của trang thành
 Bài 3: function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2 (tham số truyền vào có thể là id của 2 đoạn văn).
 <script type="text/javascript">
 	function copyContent(paragraph1, paragraph2){
-		document.getElementById("p1").textContent = document.getElementById("p2").textContent;
+		document.getElementById(paragraph1).textContent = document.getElementById(paragraph2).textContent;
 	}
 </script>
 
@@ -58,7 +58,7 @@ Bài 5: function increaseFontSize(paragraph): Tăng kích thước font chữ c�
 <script type="text/javascript">
 	function increaseFontSize(paragraph){
 		var max = 30;
-		var p = document.getElementById('p3');
+		var p = document.getElementById(paragraph);
 		var style = window.getComputedStyle(p, null).getPropertyValue('font-size');
 		var fontSize = parseInt(style);
 		if (fontSize < max) {
@@ -74,7 +74,7 @@ Bài 6: function decreaseFontSize(paragraph): Giảm kích thước font chữ c
 <script type="text/javascript">
 	function decreaseFontSize(paragraph){
 		var min = 10;
-				var p = document.getElementById('p3');
+				var p = document.getElementById(paragraph);
 		var style = window.getComputedStyle(p, null).getPropertyValue('font-size');
 		var fontSize = parseInt(style);
 		if (fontSize > min) {
