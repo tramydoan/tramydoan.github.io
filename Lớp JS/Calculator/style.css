@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-size: cover;
+	background-image: url(https://images.pexels.com/photos/1449082/pexels-photo-1449082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+table {
+	margin-top: 50px;
+	margin-left: 350px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #939fc3;
+}
+.container {
+	margin: auto;
+	width: 300px;
+}
+.button_number {
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	border-radius: 20%;
+	font-weight: bold;
+	font-size: 20px;
+}
+.button_func {
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	border-radius: 20%;
+	font-weight: bold;
+	font-size: 20px;
+}
+.button_operator{
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	border-radius: 20%;
+	font-weight: bold;
+	font-size: 20px;
+}
+#result {
+	width: 200px;
+	height: 60px;
+	text-align: right;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.button_del {
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	border-radius: 20%;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #ff6868;
+}
+.button_result{
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+	border-radius: 20%;
+	font-weight: bold;
+	font-size: 20px;
+}
+input:hover {
+	background-color: #fd8dff;
+}
+#credit {
+	position: absolute;
+	text-align: center;
+	right: 50px;
+	color: white;
+	font-weight: bold;
+	animation: fadeinout 5s ease 1;
+}
+@keyframes fadeinout {
+	0% {opacity: 0; right: 5px;}
+	25% {opacity: 1; right: 50px;}
+	50% {opacity: 1; right: 50px;}
+	75%{opacity: 0; right: 300px;}
+	100% {opacity: 0; right: 300px;}
+}

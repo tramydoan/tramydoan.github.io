@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<table colspan ="4">
+			<tr>
+				<td colspan="3"><input id="result" type="text" placeholder="0" value="" disabled></td>
+				<td><input type="button" class="button_del" value="AC" onclick="result.value=''"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="x!" class="button_func" onclick="factorial()"></td>
+				<td><input type="button" class="button_func" value="x&sup2;" onclick="square()"></td>
+				<td><input type="button" value="&radic;x" class="button_func" onclick="sqrt()"></td>
+				<td><input type="button" class="button_operator" value="+" onclick="x(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button_number" value="7" onclick="x(this)"></td>
+				<td><input type="button" class="button_number" value="8"  onclick="x(this)"></td>
+				<td><input type="button" class="button_number" value="9"  onclick="x(this)"></td>
+				<td><input type="button" class="button_operator" value="-" onclick="x(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" value="5" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" value="6" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" class="button_operator" value="*" onclick="x(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" value="2" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" value="3" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" class="button_operator" value="/" onclick="x(this)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="0" class="button_number" onclick="x(this)"></td>
+				<td><input type="button" value="." class="button_number" onclick="x(this)"></td>
+				<td><input type="button" class="button_func" value="C" onclick="result.value=result.value.substr(0,result.value.length-1)"></td>
+				<td><input type="button" value="=" class="button_result" onclick="result.value=eval(result.value)"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="credit">
+		<p>Created by Tra My - 07/2019</p>
+	</div>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script
+	src="http://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+</body>
+</html>
