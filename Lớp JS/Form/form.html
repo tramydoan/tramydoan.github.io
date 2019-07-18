@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<a href="form.html">Trang chủ</a>
+	<div class="contain">
+
+		<fieldset>
+			<h1><strong>Đăng ký</strong></h1>
+			<form method="get">
+				<span>Tên của bạn</span><br>
+				<input id="name" type="text" name="tên" placeholder="Nguyễn Văn ABC" >
+				<span style="font-size: 12px;" id="name_err"></span>
+				<br><br>
+
+				<span>Email của bạn</span><br>
+				<input id="mail" type="text" name="mail" placeholder="example@gmail.com" >
+				<span style="font-size: 12px;" id="mail_err"></span>
+				<br><br>
+
+				<span>Password</span><br>
+				<input id="pass" type="Password" name="Password" placeholder="Password">
+				<span style="font-size: 12px;" id="pass_err"></span>
+				<br><br>
+
+				<span>Giới tính</span><br>
+				<input id="i1" type="radio" name="gender" value="Nam" checked="checked"><label for="i1">Nam</label>
+				<input id="nữ" type="radio" name="gender" value="Nữ"><label for="nữ">Nữ</label>
+				<br><br>
+
+				<div class="wrap">
+					<div class="selectoption">
+						<span>Năm sinh</span><br>
+						<select class="bar" name="năm sinh">
+							<option value="1999">1999</option>
+							<option value="2000">2000</option>
+							<option value="2001">2001</option>
+						</select>
+					</div>
+
+					<div class="selectoption">
+						<span>Thành phố</span><br>
+						<select class="bar" name="thành phố">
+							<option value="Hà Nội">Hà Nội</option>
+							<option value="Đà Nẵng">Đà Nẵng</option>
+							<option value="Hồ Chí Minh">Hồ Chí Minh</option>
+						</select>
+					</div>
+
+					<div class="selectoption3">
+						<span>Quận Huyện</span><br>
+						<select class="bar" name="quận">
+							<option value="Thanh Xuân">Thanh Xuân</option>
+							<option value="Đống Đa">Đống Đa</option>
+							<option value="Hai Bà Trưng">Hai Bà Trưng</option>
+						</select>
+					</div>
+				</div>
+				<br><br>
+				<input id="button" type="submit" name="" value="Submit">
+			</form>
+		</fieldset>	
+	</div>
+	<script
+	src="http://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
