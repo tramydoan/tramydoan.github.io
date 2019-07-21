@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	font-family: Roboto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url(https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+caption{
+	color: #3BB3E0;
+	font-size: 60px;
+	font-weight: bolder;
+	padding: 30px;
+}
+table{
+	width: 100%;	
+}
+table, th ,td {		
+	border: 1px solid white;
+	border-collapse: collapse;
+	padding: 15px;
+}
+th{
+	background-color: #3BB3E0;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+th:hover {
+	cursor: pointer;
+}
+tr:nth-child(odd) {background-color: lightgray;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd):hover {background-color: #A3B0E3;}
+tr:nth-child(even):hover {background-color: #BAC4EE;}
+span {
+	margin-left: 20px;
+}
+input{
+	font-weight: bold;
+	width: 400px;
+	border: 2px solid #3BB3E0;
+	border-radius: 4px;
+	outline: none;
+	padding: 12px 14px;
+	margin-top: 20px;
+	transition:0.6s ease-in-out;
+}
+input:focus{
+	width: 500px;
+	color: darkblue
+
+}
